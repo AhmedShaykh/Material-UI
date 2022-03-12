@@ -3,24 +3,26 @@ import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
+import NavBar from './NavBar';
 
 const useStyles = makeStyles((theme) => ({
     root: {
         marginTop: 30,
         marginBottom: 30,
-        display: 'flex',
+        // display: 'flex',
         color: 'white',
-        flexWrap: 'wrap',
-        '& > *': {
-            margin: theme.spacing(1),
-            width: theme.spacing(16),
-            height: theme.spacing(16),
-        },
+        // flexWrap: 'wrap',
+        // '& > *': {
+        //     margin: theme.spacing(1),
+        //     width: theme.spacing(16),
+        //     height: theme.spacing(16),
+        // },
     },
     box: {
         height: 270,
         fontSize: 20,
-        marginTop: 'auto',
+        paddingTop: 7,
+        marginTop: 50,
         color: '#0d0c0c',
         width: 250,
         margin: '0 auto',
@@ -41,6 +43,7 @@ export default function SimplePaper() {
 
     return (
         <div className={classes.root}>
+            <NavBar />
             <Paper elevation={3} className={classes.box}>
                 <h4>
                     Login
