@@ -6,6 +6,8 @@ import Button from '@material-ui/core/Button';
 
 const useStyles = makeStyles((theme) => ({
     root: {
+        marginTop: 30,
+        marginBottom: 30,
         display: 'flex',
         color: 'white',
         flexWrap: 'wrap',
@@ -16,7 +18,8 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     box: {
-        height: 240,
+        height: 270,
+        fontSize: 20,
         marginTop: 'auto',
         color: '#0d0c0c',
         width: 250,
@@ -26,7 +29,6 @@ const useStyles = makeStyles((theme) => ({
     },
     text: {
         width: '100%',
-        fontSize: '15%',
     },
     btn: {
         width: '12%',
@@ -49,7 +51,7 @@ export default function SimplePaper() {
                 </form>
                 <br />
                 <Button variant="contained" className={classes.btn} color="primary">
-                    Login                    
+                    Login
                 </Button>
             </Paper>
         </div>
