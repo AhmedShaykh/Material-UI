@@ -1,10 +1,10 @@
 import React from 'react';
-import Paper from './Components/Paper';
+import Login from './Components/Login';
 
 function App() {
   return (
     <div className="App">
-      <Paper />
+      <Login />
     </div>
   );
 }
