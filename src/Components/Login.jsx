@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import TextField from '@material-ui/core/TextField';
+import CircularProgress from '@material-ui/core/CircularProgress';
 import Button from '@material-ui/core/Button';
 import NavBar from './NavBar';
 
@@ -19,12 +20,12 @@ const useStyles = makeStyles((theme) => ({
         // },
     },
     box: {
-        height: 270,
-        fontSize: 20,
-        paddingTop: 7,
+        height: 330,
+        fontSize: 23,
+        paddingTop: 3,
         marginTop: 50,
         color: '#0d0c0c',
-        width: 250,
+        width: 290,
         margin: '0 auto',
         backgroundColor: '#fffff',
         textAlign: 'center',
@@ -33,8 +34,8 @@ const useStyles = makeStyles((theme) => ({
         width: '100%',
     },
     btn: {
-        width: '12%',
-        height: '10%',
+        width: '14%',
+        height: '12%',
     }
 }));
 
@@ -56,6 +57,12 @@ export default function SimplePaper() {
                 <Button variant="contained" className={classes.btn} color="primary">
                     Login
                 </Button>
+                <br />
+                <br />
+                <CircularProgress value={50} />
+                <br />
+                <br />
+                <br />
             </Paper>
         </div>
     );
