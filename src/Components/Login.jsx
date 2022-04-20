@@ -8,24 +8,16 @@ import NavBar from './NavBar';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        marginTop: 30,
-        marginBottom: 30,
-        // display: 'flex',
-        color: 'white',
-        // flexWrap: 'wrap',
-        // '& > *': {
-        //     margin: theme.spacing(1),
-        //     width: theme.spacing(16),
-        //     height: theme.spacing(16),
-        // },
+        marginTop: 0,
+        color: 'white'
     },
     box: {
-        height: 330,
-        fontSize: 23,
+        height: 360,
+        fontSize: 26,
         paddingTop: 3,
         marginTop: 50,
         color: '#0d0c0c',
-        width: 290,
+        width: 350,
         margin: '0 auto',
         backgroundColor: '#fffff',
         textAlign: 'center',
